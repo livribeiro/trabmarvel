@@ -7,7 +7,6 @@ const privateKey = '6f207ffb25f7b63f5038ee138cdb6ae17851276a';
 const ts = 1;
 
 class charactersModel {
-    requestOptions = {};
 
     constructor() {
         const hash = md5(`${ts}${privateKey}${publicKey}`);
