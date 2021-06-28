@@ -10,7 +10,8 @@ const publicKey = 'Insira sua chave publica';
 const privateKey = 'Insira sua chave privada';
 
 
-Execultando a API direto do HEROKU
+Execultando a API direto do HEROKU, após trocar as chaves
+
 https://trabmarvel.herokuapp.com/v1/public/characters/
 https://trabmarvel.herokuapp.com/v1/public/characters/1011334
 https://trabmarvel.herokuapp.com/v1/public/characters/1011334/comics
