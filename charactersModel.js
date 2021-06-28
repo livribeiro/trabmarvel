@@ -2,8 +2,8 @@ const md5 = require("md5");
 const request = require('request');
 
 const endpoint = "http://gateway.marvel.com/v1/public/characters"
-const publicKey = 'fbd397a06c30c18223bcdebb92d95bca';
-const privateKey = '6f207ffb25f7b63f5038ee138cdb6ae17851276a';
+const publicKey = 'Insira sua chave publica';
+const privateKey = 'Insira sua chave privada';
 const ts = 1;
 
 class charactersModel {
@@ -24,7 +24,7 @@ class charactersModel {
         this.requestOptions.url = endpoint
         request(this.requestOptions, (err, response, body) => {
             if (err) {
-                console.error('Model >> Erro ao buscar todos os personagens.');
+               
                 cb(true, null);
             }
 
