@@ -2,6 +2,7 @@
 
 # Orientações
 
+
 No arquivo charactersModel.js
 
 Altere as chaves públicas e privadas para rodar!
