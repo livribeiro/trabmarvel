@@ -6,7 +6,7 @@ const getAllCharacters = (req, res) => {
 
     controller.getAllCharacters((err, characters) => {
         if (err) {
-            console.error('Route >> Erro ao buscar todos os personagens.');
+            
             return res.status(400).json({
                 error: true,
                 message: "Erro ao buscar todos os personagens"
