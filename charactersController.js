@@ -4,7 +4,7 @@ class charactersController {
     getAllCharacters(cb) {
         model.getAllCharacters((err, response) => {
             if (err) {
-                console.error('Controller >> Erro ao buscar todos os personagens.');
+     
                 cb(true, null);
             }
 
@@ -17,7 +17,6 @@ class charactersController {
     getInfos(obj, cb) {
         model.getInfos(obj, (err, response) => {
             if (err) {
-                console.error(`Controller >> Erro ao buscar ${obj.message}.`);
                 cb(true, null);
             }
 
