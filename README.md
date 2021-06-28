@@ -1,6 +1,6 @@
 # trabmarvel
 
-# No arquivo charactersModel.js
+# Orientações
 
 No arquivo charactersModel.js
 
