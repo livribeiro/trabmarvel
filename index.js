@@ -11,3 +11,4 @@ app.use('/v1/public/characters', charactersRoute);
 app.listen(port, () => {
     console.info(`>> Servidor rodando na porta ${port}`);
 });
+module.exports = app;
