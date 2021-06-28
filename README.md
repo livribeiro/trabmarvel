@@ -23,3 +23,6 @@ https://trabmarvel.herokuapp.com/v1/public/characters/1011334/stories
 
 Rodar Testes
 executar no prompot npm test
+
+Publicado no Docker:
+https://hub.docker.com/r/liviasilva/trabmarvel
