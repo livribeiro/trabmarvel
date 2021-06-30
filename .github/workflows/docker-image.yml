@@ -15,8 +15,8 @@ jobs:
       - name: Log in into Docker Hub
         uses: docker/login-action@v1
         with:
-          username: ${{ secrets.username }}
-          password: ${{ secrets.password }}
+          username: ${{ liviasilva }}
+          password: ${{ DockLiv*2021}}
 
       - name: Send image to Docker Hub
         working-directory: ./trabmarvel
