@@ -1,18 +1,25 @@
-name: Docker Image CI
+  
+name: Generate Node Docker Image
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+on: [push]
 
 jobs:
-
-  build:
-
+  push_to_registry:
+    name: Setup Docker Image
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      - name: checkout repository
+        uses: actions/checkout@v2
+
+      - name: Log in into Docker Hub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.username }}
+          password: ${{ secrets.password }}
+
+      - name: Send image to Docker Hub
+        working-directory: ./trabmarvel
+        run: |
+          docker build -t liviasilva/trabmarvel:latest .
+          docker push liviasilva/trabmarvel:latest
